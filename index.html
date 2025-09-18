@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="title">WeatherAPI</h1>
+    <p class="subtitle">Beautiful weather information at your fingertips</p>
+    <div class="search-box">
+      <input type="text" id="city" placeholder="Enter city name...">
+      <button onclick="getWeather()">
+        🔍
+      </button>
+    </div>
+  </section>
+
+  <!-- Weather Result -->
+  <section class="weather-card" id="weather-card" style="display: none;">
+    <h2 id="city-name">City</h2>
+    <div class="temp" id="temperature">--°C</div>
+    <p id="condition">--</p>
+    <div class="details">
+      <p>🌡 Feels like: <span id="feels-like">--</span>°C</p>
+      <p>💧 Humidity: <span id="humidity">--</span>%</p>
+      <p>💨 Wind: <span id="wind">--</span> km/h</p>
+    </div>
+  </section>
+
+  <!-- Forecast -->
+  <section class="forecast" id="forecast" style="display: none;">
+    <h3>5-Day Forecast</h3>
+    <div class="forecast-cards" id="forecast-cards">
+      <!-- Cards will be injected here -->
+    </div>
+  </section>
+
+</body>
+</html>
